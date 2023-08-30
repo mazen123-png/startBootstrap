@@ -1,0 +1,609 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container{
+    display: flex;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(44, 62, 80,1);
+    height: 110px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    transition: height 0.3s ease-in-out;
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    list-style-type: none;
+    cursor: pointer;
+    margin: 30px;
+}
+.contact{
+    padding-right: 5em;
+}
+.fa-list-contain{
+    display: none;
+}
+ul li a,header .specialLink {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Montserrat", '-apple-system', 'BlinkMacSystemFont', "Segoe UI", 'Roboto', "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: uppercase;
+    font-weight: 700;
+}
+header ul li a{
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: -10px;
+    font-size: 20px;
+}
+header .specialLink{
+    padding: 25px 40px 60px 90px;
+    font-size: 30px;
+    line-height: 50px;
+}
+ul li a:hover{
+    color: #2b666a;
+}
+.firstSection{
+    padding: 200px 100px;
+    background-color: rgba(26,188,156,1);
+    height: 800px;
+    width: 100%;
+}
+
+section main div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.firstSection img{
+    height: 250px;
+    width: 300px;
+    
+    margin-top: 30px;
+}
+.firstSection div h1{
+    font-size: 4em;
+    margin-top: 1.6em;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+.specialLetter{
+    margin-right: 400px;
+}
+.specialIcons{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 45px;
+}
+section main div .specialIcons .fa-solid,section .specialIcons .fa-star{
+    color: #fff;
+    font-size: 2.1em;
+    width: 10px;
+    margin-right: 5px;
+}
+section main div .specialIcons hr{
+    border: none;
+    border-top: 3px solid #fff;
+    margin: 20px 0;
+    width: 100px;
+    position: relative;
+    left: 50px;
+}
+section main div .specialIcons .firstLine{
+    left: -27px;
+}
+.specialIcons2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+section main div h2{
+    color: #fff;
+    margin-top: 30px;
+}
+.container{
+    flex-direction: column;
+}
+.secondSection{
+    height: 40em;
+}
+.secondSection .container .content1 h1, .fourthSection h1{
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: rgba(44, 62, 80, 1);
+}
+.secondSection .container .content1 hr,.fourthSection .specialIcons2 hr{
+    border: none;
+    border-top: 3px solid rgba(44, 62, 80, 1);
+    margin: 20px 0;
+    width: 100px;
+    position: relative;
+    left: 40px;
+}
+.secondSection .container .content1 .firstLine, .fourthSection .specialIcons2 .firstLine{
+    left: -27px;
+}
+.secondSection .container .content1 .fa-solid, .fourthSection .specialIcons2 .fa-solid{
+    color: rgba(44, 62, 80, 1);
+    font-size: 1.8em;
+    width: 10px;
+    margin-right: 5px;
+}
+.content2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    width: 21.25em;
+    height: 14em;
+    border-radius: 15px;
+    margin: 0 1em 1em 0;
+    display: flex;
+    justify-content: center;
+}
+.image:hover{
+    cursor: pointer;
+    background-color: rgba(26,188,156,1);
+    color: #1abc9c;
+    z-index: 999;
+    opacity: 1;
+}
+.card div{
+    position: absolute;
+    background-color: #1abc9c;
+    width: 19.5em;
+    height: 14em;
+    opacity: 0;
+    cursor: pointer;
+}
+.card:hover div,.image:hover div{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.fa-plus{
+    color: #fff;
+    position: absolute;
+    transform: translate(0,30%);
+    z-index: 9999;
+    font-size: 8em;
+    opacity: 0;
+    cursor: pointer;
+}
+.card:hover .fa-plus{
+    opacity: 1;
+}
+.thirdSection{
+    height: 50em;
+    background-color: rgba(26,188,156,1);
+    margin-top: 10em;
+    width: 100%;
+}
+.thirdSection h1{
+    color: #fff;
+    text-align: center;
+    padding-top: 2em;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.thirdSection .specialIcons hr{
+    border: none;
+    border-top: 3px solid #fff;
+    margin: 20px 0;
+    width: 100px;
+    position: relative;
+    left: 40px;
+}
+.thirdSection .specialIcons  .firstLine{
+    left: -27px;
+}
+.thirdSection  .specialIcons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.thirdSection p{
+    color: #fff;
+}
+.thirdSection .paragraphs{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    width: 100%;
+} 
+.firstParagraph{
+    max-width: 18em;
+    margin-right: 5em;
+    margin-top: 1em;
+}
+.secondParagraph{
+    max-width: 18em;
+    margin-top: 1em;
+}
+.thirdSection .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+}
+.thirdSection .download{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 6px;
+    font-size: 1em;
+}
+.thirdSection .download:hover,.thirdSection .download:hover .fa-download,.thirdSection .download:hover h3{
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}
+.thirdSection .download a{
+    color: #fff;
+    text-decoration: none;
+}
+.thirdSection .download a h3{
+    text-transform: capitalize;
+}
+.thirdSection .download .fa-download{
+   color: #fff; 
+   margin-right: 10px;
+}
+.fourthSection{
+    height: 50em;
+}
+.formContact .name,.formContact .email,.formContact .phoneNumber,.formContact .message{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.emailaddress,.phone{
+    min-width: 8em;
+    margin-left: 3em;
+}
+.formContact label{
+    font-size: 25px;
+    color: #99a0a7;
+    margin-bottom: 30px;
+    cursor: text;
+    transition: font-size 0.5s ease;
+    transition: transform 0.5s linear;
+    margin-right: 22em;
+    width: 6em;
+}
+
+.formContact input{
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #ced4da;
+    width: 35em;
+    display: inline-block;
+    margin-bottom: 2em;
+    font-size: 18px;
+
+}
+.formContact textarea{
+    outline: none;
+    border: none;
+    border-bottom:2px solid #ced4da;
+    width: 35em;
+    font-size: 18px;
+}
+input:focus + label ,textarea:focus + label{
+    font-size: 15px;
+    margin-right: 40em;
+}
+.sendButton{
+    display: flex;
+    margin-top: 1.5em;
+}
+form button{
+    color: #fff;
+    background-color: #1bbc9b;
+    border-radius: 6px;
+    padding: 20px;
+    text-transform: capitalize;
+    margin: auto 23em;
+    cursor: pointer;
+    border: none;
+}
+footer{
+    background-color: rgba(44, 62, 80, 1);
+    color: #fff;
+    height: 20em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.location{
+    margin-left: 2em;
+    margin-right: 20px;
+    margin-top: -5em;
+}
+.location h2,.freelancer h2{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.location p{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+}
+.webIcons{
+    margin-right: 4em;
+    margin-left: 4em;
+    margin-top: -5em;
+}
+.webIcons h2{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 9em;
+}
+.webIcons .socialIcons{
+    display: flex;
+}
+.webIcons .socialIcons div{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 10px;
+}
+.webIcons a{
+    margin-right: 15px;
+    font-size: 40px;
+    color: #fff;
+}
+.webIcons a i{
+    border-radius: 50%;
+    color: #fff;
+    position: relative;
+    left: 5px;
+}
+.freelancer{
+    margin-left: 50px;
+    margin-top: -5em;
+}
+.freelancer h2{
+    font-family:"Montserrat"
+}
+.freelancer p{
+    width: 18em;
+    font-size: 20px;
+}
+.freelancer p a{
+    color: #1abc9c;
+    text-decoration: underline;
+}
+.copyright{
+    background-color: #1a252f;
+    color: #fff;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* responsive*/
+@media (max-width:1058px){
+    .secondSection{
+        min-height: 50em;
+    } 
+}
+@media(max-width:1023px){
+    header{
+        height: 80px;
+        justify-content: left;
+    }
+    header ul{
+        display: none;
+        top: 10%;
+        width: 30%;
+    }
+    header ul li{
+        margin: 10px;
+    }
+    .contact{
+        padding-right: 2em;
+    }
+    .fa-list-contain{
+        display: inline;
+        color: #fff;
+        font-size: 24px;
+        margin: 20px;
+        margin-left: 25%;
+    }
+    header ul{
+        flex-direction: column;
+        transition: all .5s ease-in-out;
+        margin-top: 60px;
+        align-items: center;
+        position: absolute;
+        left: 20%;
+        background-color: #0c192ca2;
+    }
+    header ul li{
+        border-bottom: 2px solid rgba(0, 255, 234, 0.918);
+    }
+    header .specialLink{
+        padding: 10px 0 0 5px;
+    }
+    .firstSection main div{
+        width: 100%;
+    }
+    .firstSection{
+        min-height: 1000px;
+    }
+    .secondSection{
+        min-height: 50em;
+    } 
+    .thirdSection .download .fa-download{
+        margin-top: 10px;
+    }
+    .formContact input,.formContact textarea{
+        width: 80%;
+    }
+    .paragraphs{
+        margin-left: 20px;
+        margin-right: 30px;
+        flex-direction: column;
+    }
+    .location{
+        margin-left: 4em;
+        margin-right: 10px;
+    }
+}
+@media(max-width:900px){
+    .location,.freelancer,.webIcons{
+        margin-left: 8em;
+        margin-right: 5px;
+    }
+    .fourthSection label{
+        margin-right: 18em; 
+    }
+    footer{
+        min-height: 30em;
+        display: block;
+        margin: auto;
+    }
+    .location,.webIcons{
+        margin-bottom: 8em;
+    }
+
+}
+@media (max-width:728px){
+    .secondSection{
+        min-height: 100em;
+    } 
+    .fourthSection label{
+        margin-right: 16em;
+    }
+    .location{
+        margin-left: 7em;
+        margin-right: 5px;
+    }
+    footer{
+        min-height: 30em;
+        display: block;
+        margin: auto;
+    }
+    .location,.webIcons{
+        margin-bottom: 8em;
+    }
+}
+@media(max-width:650px){
+    header .specialLink{
+        font-size: 20px;
+    }
+    .firstSection main div{
+        width: 100%;
+    }
+    .firstSection{
+        height: 1000px;
+    }
+    .thirdSection{
+        min-height: 70em;
+    }
+    .fourthSection{
+        min-height: 60em;
+    }
+    .fourthSection label{
+        margin-right: 8em;
+    }
+    .firstSection div h1{
+        font-size: 2em;
+        min-width: 10em;
+    }
+}
+@media (max-width:580px){
+    .fourthSection{
+        min-height: 60em;
+    }
+}
+@media(max-width:532px){
+    header .specialLink{
+        font-size: 18px;
+        margin-right: 10px;
+        margin-left: 10%;
+    }
+    
+    .firstSection main div{
+        width: 100%;
+    }
+    .firstSection{
+        height: 1000px;
+    }
+}
+@media (max-width:500px){
+    .specialLink{
+        font-size: 10px;
+    }
+    header ul li a{
+        font-size: 12px;
+    }
+    .fourthSection label{
+        margin-right: 15em;
+    }
+    .firstSection{
+        width: 100%;
+    }
+    .fourthSection label{
+        margin-right: 60%;
+    }
+    .firstSection main div{
+        width: 100%;
+    }
+    .fourthSection{
+        width: 100%;
+    }
+    footer{
+        min-height: 40em;
+        width: 100%;
+    }
+    .freelancer p{
+        max-width: 10em;
+    }
+    .location{
+        padding-top: 1em;
+    }
+    .sendButton button{
+        width: 50%;
+    }
+    .firstParagraph{
+        margin-right: 2em;
+    }
+}
+
